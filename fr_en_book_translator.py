@@ -1,24 +1,3 @@
-#!/usr/bin/env python
-"""
-Translate a French EPUB novel into an English EPUB novel while preserving formatting and structure.
-
-This script leverages the MarianMT model from Hugging Face’s Transformers library for translation,
-which is based on the sequence-to-sequence transformer architecture described in "Attention Is All You Need"
-(Vaswani et al., 2017) and subsequent research on efficient translation. For more details on PyTorch integration,
-please see the latest documentation: https://pytorch.org/docs/stable/index.html.
-
-Requirements:
-    - ebooklib
-    - beautifulsoup4
-    - transformers
-    - torch
-
-Usage:
-    python translate_epub.py --input input_french.epub --output output_english.epub
-
-Note: This script is designed to run efficiently on a gaming laptop with a GPU (e.g., Nvidia GTX 3070).
-"""
-
 import argparse
 import re
 from ebooklib import epub
